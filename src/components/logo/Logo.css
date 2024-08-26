@@ -1,0 +1,34 @@
+.ui.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.125rem;
+    height: 3.125rem;
+    background-color: var(--color-web-unifi-neutral-02);
+}
+
+.ui.logo svg path {
+    fill: var(--color-web-unifi-neutral-10);
+}
+
+.ui.logo.is-hovered,
+.ui.logo:hover {
+    background-color: var(--color-web-unifi-neutral-00);
+}
+
+.ui.logo.is-hovered svg path,
+.ui.logo:hover svg path {
+    fill: var(--color-web-unifi-blue-06);
+}
+
+
+.ui.logo.is-focused,
+.ui.logo:focus-visible {
+    outline: 0.0625rem solid var(--color-web-unifi-blue-06);
+    outline-offset: -0.0625rem;
+}
+
+.ui.logo.is-focused svg path,
+.ui.logo:focus-visible svg path {
+    fill: var(--color-web-unifi-blue-06);
+}

@@ -1,0 +1,21 @@
+:root {
+    --color-web-unifi-blue-06: #006FFF;
+
+    --color-web-unifi-neutral-10: #373737;
+    --color-web-unifi-neutral-04: #EDEDF0;
+    --color-web-unifi-neutral-02: #F6F7F8;
+    --color-web-unifi-neutral-00: #FFFFFF;
+
+    --color-web-unifi-text-1: #252525;
+    --color-web-unifi-text-2: #595959;
+    --color-web-unifi-text-3: #8C8C8C;
+
+}
+
+
+html, body {
+    box-sizing: border-box;
+    background-color: var(--color-web-unifi-neutral-00);
+    margin: 0;
+    padding: 0;
+}
