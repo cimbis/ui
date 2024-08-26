@@ -1,0 +1,38 @@
+.ui.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--color-web-unifi-neutral-00);
+    border: none;
+    border-radius: var(--border-radius-sm);
+}
+
+.ui.icon svg path {
+    fill: var(--color-web-unifi-neutral-08);
+}
+
+.ui.icon.is-hovered,
+.ui.icon:hover {
+    background-color: var(--color-web-unifi-neutral-04);
+    cursor: pointer;
+}
+
+.ui.icon.is-focused,
+.ui.icon:focus-visible {
+    outline: 0.0625rem solid var(--color-web-unifi-blue-06);
+    outline-offset: -0.0625rem;
+}
+
+.ui.icon.is-active,
+.ui.icon:active {
+    background-color: var(--color-web-unifi-neutral-02);
+}
+
+.ui.icon.is-active svg path,
+.ui.icon:active svg path {
+    fill: var(--color-web-unifi-blue-06);
+}
+
+

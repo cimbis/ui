@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import { Link, LinkProps } from 'react-router-dom';
 import classnames from 'classnames';
 
-import LogoSVG from '../../assets/logo.svg?react';
+import LogoSVG from '../../assets/components/logo.svg?react';
 
 import './Logo.css';
 

@@ -2,6 +2,7 @@
     --color-web-unifi-blue-06: #006FFF;
 
     --color-web-unifi-neutral-10: #373737;
+    --color-web-unifi-neutral-08: #838691;
     --color-web-unifi-neutral-04: #EDEDF0;
     --color-web-unifi-neutral-02: #F6F7F8;
     --color-web-unifi-neutral-00: #FFFFFF;
@@ -10,6 +11,8 @@
     --color-web-unifi-text-2: #595959;
     --color-web-unifi-text-3: #8C8C8C;
 
+    --border-radius-sm: 0.25rem;
+    --border-radius-md: 0.5rem;
 }
 
 
