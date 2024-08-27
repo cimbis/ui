@@ -13,6 +13,12 @@ import { Searchbox } from '../components/Search/Searchbox.tsx';
 
 import Placeholder from '../assets/components/placeholder.png';
 import './ComponentList.css';
+import {Table} from "../components/Table/Table.tsx";
+import {THead} from "../components/Table/THead.tsx";
+import {TR} from "../components/Table/TR.tsx";
+import {TH} from "../components/Table/TH.tsx";
+import {TBody} from "../components/Table/TBody.tsx";
+import {TD} from "../components/Table/TD.tsx";
 
 export const ComponentList = () => {
     return (
@@ -77,6 +83,48 @@ export const ComponentList = () => {
                     <Searchbox className={'is-hovered'} placeholder={'Search'} />
                     <Searchbox className={'is-focused'} placeholder={'Search'} />
                     <Searchbox className={'is-active'} />
+                </div>
+            </div>
+            <div className="row">
+                <div className="col min-width-500 max-height-150">
+                    <Table>
+                        <THead>
+                            <TR>
+                                <TH scope={'col'}>First</TH>
+                                <TH>Second</TH>
+                            </TR>
+                        </THead>
+                        <TBody>
+                            <TR>
+                                <TD>123</TD>
+                                <TD>321</TD>
+                            </TR>
+                            <TR>
+                                <TD>123</TD>
+                                <TD>321</TD>
+                            </TR>
+                            <TR>
+                                <TD>123</TD>
+                                <TD>321</TD>
+                            </TR>
+                            <TR>
+                                <TD>123</TD>
+                                <TD>321</TD>
+                            </TR>
+                            <TR>
+                                <TD>123</TD>
+                                <TD>321</TD>
+                            </TR>
+                            <TR>
+                                <TD>123</TD>
+                                <TD>321</TD>
+                            </TR>
+                            <TR>
+                                <TD>123</TD>
+                                <TD>321</TD>
+                            </TR>
+                        </TBody>
+                    </Table>
                 </div>
             </div>
         </>

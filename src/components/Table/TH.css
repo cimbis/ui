@@ -1,0 +1,15 @@
+.ui.table-header-cell {
+    position: sticky;
+    top: 0;
+    padding: 0;
+    background-color: var(--color-web-unifi-neutral-00);
+    font-weight: var(--font-weight-bold);
+}
+
+.ui.table-header-cell .th-border {
+    width: 100%;
+    padding: 0.375rem var(--space-md);
+    border-right: none;
+    border-bottom: 0.0625rem solid var(--color-web-unifi-neutral-04);
+    border-left: none;
+}

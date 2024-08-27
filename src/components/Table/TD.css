@@ -1,0 +1,8 @@
+.ui.table-cell {
+    padding: 0.375rem  var(--space-md);
+    color: var(--color-web-unifi-text-2);
+    border-top:none;
+    border-right: none;
+    border-bottom: 0.0625rem solid var(--color-web-unifi-neutral-04);
+    border-left: none;
+}
