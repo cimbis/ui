@@ -1,4 +1,4 @@
-import { Logo } from '../components/logo/Logo.tsx';
+import { Logo } from '../components/Logo/Logo.tsx';
 import { IconButton } from '../components/Icon/IconButton.tsx';
 
 import { ProductCard } from '../components/ProductCard/ProductCard.tsx';
