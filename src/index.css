@@ -3,20 +3,21 @@
 
     --color-web-unifi-neutral-10: #373737;
     --color-web-unifi-neutral-08: #838691;
+    --color-web-unifi-neutral-06: #B6B9C4;
     --color-web-unifi-neutral-04: #EDEDF0;
     --color-web-unifi-neutral-02: #F6F7F8;
     --color-web-unifi-neutral-01: #F9FAFA;
     --color-web-unifi-neutral-00: #FFFFFF;
 
-    --color-web-unifi-text-1: #252525;
-    --color-web-unifi-text-2: #595959;
+    --color-web-unifi-text-1: #000000D9;
+    --color-web-unifi-text-2: #000000A6;
     --color-web-unifi-text-3: #8C8C8C;
 
     --border-radius-sm: 0.25rem;
     --border-radius-md: 0.5rem;
 
     --space-md: 0.5rem;
-    --space-sm: 0.5rem;
+    --space-sm: 0.25rem;
     --space-xs: 0.125rem;
 
     --font-size-sm: 0.75rem;
@@ -36,6 +37,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    color: var(--color-web-unifi-text-1);
 }
 
 a:visited,

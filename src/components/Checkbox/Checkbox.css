@@ -1,0 +1,15 @@
+.ui.checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.25rem;
+    gap: var(--space-md);
+    padding: var(--space-xs);
+    color: var(--color-web-unifi-text-2);
+}
+
+.ui.checkbox.is-focused,
+.ui.checkbox:focus-within {
+    outline: 0.0625rem solid var(--color-web-unifi-blue-06);
+    border-radius: var(--border-radius-sm);
+}

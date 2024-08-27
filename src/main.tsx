@@ -6,8 +6,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import { ComponentList } from './templates/ComponentList.tsx';
 
-import { DeviceImageContext } from './context/DeviceImageContext.ts';
-
 import './index.css';
 
 const router = createBrowserRouter([
@@ -19,8 +17,6 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
-        <DeviceImageContext.Provider value={null}>
-            <RouterProvider router={router} />
-        </DeviceImageContext.Provider>
+        <RouterProvider router={router} />
     </StrictMode>,
 );

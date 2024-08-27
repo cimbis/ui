@@ -1,0 +1,25 @@
+.ui.checkbox-input {
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    margin: 0;
+    padding: 0;
+    border: 0.0625rem solid var(--color-web-unifi-neutral-06);
+    border-radius: var(--border-radius-sm);
+}
+
+.ui.checkbox-input.is-hovered,
+.ui.checkbox-input:hover {
+    border: 0.0625rem solid var(--color-web-unifi-blue-06);
+    cursor: pointer;
+}
+
+.ui.checkbox-input.is-checked,
+.ui.checkbox-input:checked {
+    border: none;
+    background-image: url("../../assets/components/tick.svg");
+}
+
+.ui.checkbox-input:focus-visible {
+    outline: none;
+}
