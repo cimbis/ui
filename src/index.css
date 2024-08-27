@@ -13,9 +13,10 @@
     --color-web-unifi-text-2: #000000A6;
     --color-web-unifi-text-3: #8C8C8C;
 
-    --border-radius-sm: 0.25rem;
     --border-radius-md: 0.5rem;
+    --border-radius-sm: 0.25rem;
 
+    --space-xxl: 2rem;
     --space-md: 0.5rem;
     --space-sm: 0.25rem;
     --space-xs: 0.125rem;
