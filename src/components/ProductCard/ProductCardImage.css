@@ -1,0 +1,12 @@
+.ui.product-card-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6.25rem;
+    padding: 0 2rem;
+    background: var(--color-web-unifi-neutral-02);
+}
+
+.ui.product-card-image {
+    justify-self: center;
+}

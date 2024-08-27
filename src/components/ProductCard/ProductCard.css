@@ -1,0 +1,33 @@
+.ui.product-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    border: 0.0625rem solid var(--color-web-unifi-neutral-04);
+    border-radius: var(--border-radius-md);
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.ui.product-card.is-hovered,
+.ui.product-card:hover {
+    background-color: var(--color-web-unifi-neutral-01);
+}
+
+.ui.product-card.is-focused,
+.ui.product-card:focus-visible {
+    outline: 0.0625rem solid var(--color-web-unifi-blue-06);
+    outline-offset: -0.0625rem;
+}
+
+
+.ui.product-card .badge {
+    position: absolute;
+    top: var(--space-sm);
+    right: var(--space-sm);
+    padding: var(--space-xs);
+    border-radius: var(--border-radius-sm);
+    color: var(--color-web-unifi-blue-06);
+    background-color: var(--color-web-unifi-neutral-00);
+    font-size: var(--font-size-sm);
+}

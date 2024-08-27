@@ -1,6 +1,11 @@
 import { Logo } from '../components/logo/Logo.tsx';
-import {IconButton} from "../components/Icon/IconButton.tsx";
+import { IconButton } from '../components/Icon/IconButton.tsx';
 
+import { ProductCard } from '../components/ProductCard/ProductCard.tsx';
+import { ProductCardImage } from '../components/ProductCard/ProductCardImage.tsx';
+import { ProductCardContent } from '../components/ProductCard/ProductCardContent.tsx';
+
+import Placeholder from '../assets/components/placeholder.png';
 import './ComponentList.css';
 
 export const ComponentList = () => {
@@ -12,10 +17,35 @@ export const ComponentList = () => {
                 <Logo to={'#'} className={'is-focused'} />
             </div>
             <div className="col">
-                <IconButton icon={"search"} />
-                <IconButton icon={"list"} className={'is-hovered'}/>
-                <IconButton icon={"grid"} className={'is-focused'}/>
-                <IconButton icon={"search"} className={'is-active'}/>
+                <IconButton icon={'search'} />
+                <IconButton icon={'list'} className={'is-hovered'} />
+                <IconButton icon={'grid'} className={'is-focused'} />
+                <IconButton icon={'search'} className={'is-active'} />
+            </div>
+            <div className="col">
+                <ProductCard to={'#'} badge={'unifi'}>
+                    <ProductCardImage imgSrc={Placeholder} imgAlt={''} />
+                    <ProductCardContent>
+                        <span>123</span>
+                        <span className={'ui text-quiet text-small'}>123</span>
+                    </ProductCardContent>
+                </ProductCard>
+
+                <ProductCard to={'#'} badge={'unifi-lte'} className={'is-hovered'}>
+                    <ProductCardImage imgSrc={Placeholder} imgAlt={''} />
+                    <ProductCardContent>
+                        <span>123</span>
+                        <span className={'ui text-quiet text-small'}>123</span>
+                    </ProductCardContent>
+                </ProductCard>
+
+                <ProductCard to={'#'} badge={'unifi-lte'} className={'is-focused'}>
+                    <ProductCardImage imgSrc={Placeholder} imgAlt={''} />
+                    <ProductCardContent>
+                        <span>123</span>
+                        <span className={'ui text-quiet text-small'}>123</span>
+                    </ProductCardContent>
+                </ProductCard>
             </div>
         </div>
     );
