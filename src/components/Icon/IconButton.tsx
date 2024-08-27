@@ -1,24 +1,22 @@
-import { HTMLAttributes, lazy, Suspense, useMemo } from 'react';
-import classnames from 'classnames';
+import { HTMLAttributes, lazy, Suspense } from 'react';
+import cx from 'classnames';
 
-import "./IconButton.css"
+import './IconButton.css';
 
 export type IconProps = {
     icon: 'search' | 'list' | 'grid';
 } & HTMLAttributes<HTMLButtonElement>;
 
-export const IconButton = ({ icon, className, ...props }: IconProps) => {
-    const IconSVG = useMemo(() => {
-        return lazy(() => import(`../../assets/icons/${icon}.svg?react`));
-    }, [icon]);
+const getIcon = (icon: string) => {
+    return lazy(() => import(`../../assets/icons/${icon}.svg?react`));
+};
 
-    const computedClassname = useMemo(() => {
-        return classnames('ui icon', className);
-    }, [className]);
+export const IconButton = ({ icon, className, ...props }: IconProps) => {
+    const IconSVG = getIcon(icon);
 
     return (
         <Suspense fallback={null}>
-            <button className={computedClassname} {...props}>
+            <button className={cx('ui icon', className)} {...props}>
                 <IconSVG />
             </button>
         </Suspense>
