@@ -1,0 +1,29 @@
+.ui.searchbox {
+    width: 100%;
+    height: 2rem;
+    padding: 0 0 0 var(--space-xxl);
+    border: none;
+    border-radius: var(--border-radius-sm);
+    background-image: url("../../assets/icons/search.svg");
+    background-repeat: no-repeat;
+    background-position: var(--space-md) center;
+    background-color: var(--color-web-unifi-neutral-02);
+    color: var(--color-web-unifi-text-1);
+}
+
+.ui.searchbox::placeholder {
+    color: var(--color-web-unifi-text-3);
+}
+
+.ui.searchbox.is-hovered,
+.ui.searchbox:hover {
+    background-color: var(--color-web-unifi-neutral-04);
+}
+
+.ui.searchbox.is-focused,
+.ui.searchbox.is-active,
+.ui.searchbox:focus-visible,
+.ui.searchbox:active {
+    outline: 0.0625rem solid  var(--color-web-unifi-blue-06);
+    outline-offset: -0.0625rem;
+}
