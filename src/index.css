@@ -12,15 +12,18 @@
     --color-web-unifi-text-1: #000000D9;
     --color-web-unifi-text-2: #000000A6;
     --color-web-unifi-text-3: #8C8C8C;
+    --color-web-unifi-text-4: #BDBDBD;
 
     --border-radius-md: 0.5rem;
     --border-radius-sm: 0.25rem;
 
     --space-xxl: 2rem;
+    --space-xl: 1rem;
     --space-md: 0.5rem;
     --space-sm: 0.25rem;
     --space-xs: 0.125rem;
 
+    --font-size-md: 0.875rem;
     --font-size-sm: 0.75rem;
 
     --font-weight-bold: bold;
@@ -37,6 +40,7 @@ a {
 }
 
 html, body {
+    min-width: 20rem;
     background-color: var(--color-web-unifi-neutral-00);
     margin: 0;
     padding: 0;
@@ -50,14 +54,107 @@ a:active {
     color: inherit;
 }
 
-.ui.text-bold {
+.ui.main > .ui {
+    max-width: calc(90rem - var(--space-xxl) * 2);
+    margin: 0 auto;
+}
+
+.ui.text-weight-bold {
     font-weight: bold;
 }
 
-.ui.text-small {
+.ui.text-size-sm {
     font-size: var(--font-size-sm);
 }
+.ui.text-size-md {
+    font-size: var(--font-size-md);
+}
 
-.ui.text-quiet {
+.ui.text-color-quiet {
     color: var(--color-web-unifi-text-3);
+}
+
+.ui.text-color-light {
+    color: var(--color-web-unifi-text-4);
+}
+
+.ui.text-no-wrap {
+    text-wrap: nowrap;
+}
+
+.ui.flex-row {
+    display: flex
+}
+
+.ui.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.ui.justify-center {
+    justify-content: center;
+}
+
+.ui.justify-space-between {
+    justify-content: space-between;
+}
+
+.ui.justify-start {
+    justify-content: start;
+}
+
+.ui.align-center {
+    align-items: center;
+}
+
+.ui.align-self-start {
+    align-self: start;
+}
+
+.ui.align-self-end {
+    align-self: end;
+}
+
+.ui.w-100 {
+    width: 100%;
+}
+
+.ui.gap-16 {
+    gap: 1rem;
+}
+
+
+@media screen and (min-width: 37.5rem) {
+    .ui.md-flex-row {
+        display: flex
+    }
+
+    .ui.md-flex-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ui.md-justify-center {
+        justify-content: center;
+    }
+
+    .ui.md-justify-space-between {
+        justify-content: space-between;
+    }
+
+    .ui.md-justify-start {
+        justify-content: start;
+    }
+
+    .ui.md-align-center {
+        align-items: center;
+    }
+
+    .ui.md-align-self-start {
+        align-self: start;
+    }
+
+    .ui.md-align-self-end {
+        align-self: end;
+    }
 }
