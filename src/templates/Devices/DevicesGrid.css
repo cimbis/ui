@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
+    padding-top: var(--space-xl);
 }
 
 @media screen and (min-width: 26.875rem){
