@@ -1,4 +1,4 @@
-import {useContext, useEffect} from "react";
+import { useContext, useEffect } from 'react';
 
 import { Table } from '../../components/Table/Table.tsx';
 import { THead } from '../../components/Table/THead.tsx';
@@ -7,17 +7,18 @@ import { TR } from '../../components/Table/TR.tsx';
 import { TH } from '../../components/Table/TH.tsx';
 import { TD } from '../../components/Table/TD.tsx';
 
-import {DeviceContext} from "../../Context/DeviceContext.tsx";
-import {DevicesViewContext} from "../../Context/DevicesViewContext.tsx";
+import { DeviceContext } from '../../Context/DeviceContext.tsx';
+import { DevicesViewContext } from '../../Context/DevicesViewContext.tsx';
 
 import './DevicesList.css';
+import { Link } from 'react-router-dom';
 
 export const DevicesList = () => {
     const deviceContext = useContext(DeviceContext);
-    const {setListView} = useContext(DevicesViewContext);
+    const { setListView } = useContext(DevicesViewContext);
 
     useEffect(() => {
-        setListView()
+        setListView();
     }, [setListView]);
 
     return (
@@ -37,7 +38,9 @@ export const DevicesList = () => {
                                 key={`strictly-unique-key-based-on-index-that-will-never-change-${index}`}
                             >
                                 <TD></TD>
-                                <TD>A product</TD>
+                                <TD>
+                                    <Link to={`/device/${index}`}>A product</Link>
+                                </TD>
                                 <TD>It's name</TD>
                             </TR>
                         );

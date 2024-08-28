@@ -6,3 +6,8 @@
     border-bottom: 0.0625rem solid var(--color-web-unifi-neutral-04);
     border-left: none;
 }
+
+.ui.table-cell a {
+    text-decoration: none;
+    color: var(--color-web-unifi-text-1);
+}
