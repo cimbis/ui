@@ -1,0 +1,9 @@
+.ui.devices-controls {
+    padding: var(--space-xl) var(--space-xxl)
+}
+
+@media screen and (min-width: 37.5rem) {
+    .ui.devices-controls .nearly-responsive-searchbox {
+        width: 20rem;
+    }
+}

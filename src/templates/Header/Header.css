@@ -1,0 +1,4 @@
+.ui.page-header {
+    background-color: var(--color-web-unifi-neutral-02);
+    padding-right: var(--space-xxl);
+}
