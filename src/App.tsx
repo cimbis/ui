@@ -1,7 +1,9 @@
-import { useCallback, useEffect } from 'react';
-import { Outlet, useLocation, useNavigate } from 'react-router-dom';
+import {createContext, useCallback, useEffect} from 'react';
+import {Outlet, useLocation, useNavigate} from 'react-router-dom';
 
-import { Header } from './templates/Header/Header.tsx';
+import {Header} from './templates/Header/Header.tsx';
+
+export const DeviceContext = createContext(100);
 
 export const App = () => {
     const location = useLocation();
@@ -10,9 +12,7 @@ export const App = () => {
     const shouldRedirect = useCallback((locationPath: string) => {
         if (locationPath.includes('list') || locationPath.includes('grid')) {
             return false;
-        } else if (locationPath.split('/')[0] === 'device') {
-            return false;
-        } else if (locationPath.split('/')[0] === 'component-list') {
+        } else if (locationPath.split('/')[1] === 'device') {
             return false;
         }
         return true;
@@ -26,9 +26,9 @@ export const App = () => {
 
     return (
         <>
-            <Header />
+            <Header/>
             <main className="ui main">
-                <Outlet />
+                <Outlet/>
             </main>
         </>
     );

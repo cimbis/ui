@@ -1,3 +1,5 @@
+import {useContext} from "react";
+
 import { Table } from '../../components/Table/Table.tsx';
 import { THead } from '../../components/Table/THead.tsx';
 import { TBody } from '../../components/Table/TBody.tsx';
@@ -5,9 +7,13 @@ import { TR } from '../../components/Table/TR.tsx';
 import { TH } from '../../components/Table/TH.tsx';
 import { TD } from '../../components/Table/TD.tsx';
 
+import {DeviceContext} from "../../App.tsx";
+
 import './DevicesList.css';
 
 export const DevicesList = () => {
+    const deviceContext = useContext(DeviceContext);
+
     return (
         <div>
             <Table>
@@ -19,7 +25,7 @@ export const DevicesList = () => {
                     </TR>
                 </THead>
                 <TBody>
-                    {[...Array(100)].map((_, index) => {
+                    {[...Array(deviceContext)].map((_, index) => {
                         return (
                             <TR
                                 key={`strictly-unique-key-based-on-index-that-will-never-change-${index}`}
