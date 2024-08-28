@@ -70,6 +70,10 @@ a:active {
     font-size: var(--font-size-md);
 }
 
+.ui.text-color-main {
+    color: var(--color-web-unifi-text-1);
+}
+
 .ui.text-color-quiet {
     color: var(--color-web-unifi-text-3);
 }

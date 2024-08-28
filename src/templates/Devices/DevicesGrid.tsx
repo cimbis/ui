@@ -18,7 +18,8 @@ export const DevicesGrid = () => {
                     >
                         <ProductCardImage imgSrc={Placeholder} imgAlt={"it's a device"} />
                         <ProductCardContent>
-                            <span className="ui text-size-md">A product</span>
+                            <span
+                                className="ui text-color-main text-size-md">A product</span>
                             <span className={'ui text-color-quiet text-size-sm'}>It's a name</span>
                         </ProductCardContent>
                     </ProductCard>
