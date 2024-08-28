@@ -37,7 +37,7 @@ export const ComponentList = () => {
                     <IconButton icon={'search'} className={'is-active'} />
                 </div>
                 <div className="col">
-                    <ProductCard to={'#'} badge={'unifi'}>
+                    <ProductCard to={'#'} badge={'ui'}>
                         <ProductCardImage imgSrc={Placeholder} imgAlt={''} />
                         <ProductCardContent>
                             <span>123</span>
@@ -45,7 +45,7 @@ export const ComponentList = () => {
                         </ProductCardContent>
                     </ProductCard>
 
-                    <ProductCard to={'#'} badge={'unifi-lte'} className={'is-hovered'}>
+                    <ProductCard to={'#'} badge={'ui-6g'} className={'is-hovered'}>
                         <ProductCardImage imgSrc={Placeholder} imgAlt={''} />
                         <ProductCardContent>
                             <span>123</span>
@@ -53,7 +53,7 @@ export const ComponentList = () => {
                         </ProductCardContent>
                     </ProductCard>
 
-                    <ProductCard to={'#'} badge={'unifi-lte'} className={'is-focused'}>
+                    <ProductCard to={'#'} badge={'ui-6g'} className={'is-focused'}>
                         <ProductCardImage imgSrc={Placeholder} imgAlt={''} />
                         <ProductCardContent>
                             <span>123</span>
