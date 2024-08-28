@@ -1,9 +1,9 @@
-import {createContext, useCallback, useEffect} from 'react';
-import {Outlet, useLocation, useNavigate} from 'react-router-dom';
+import { useCallback, useEffect } from 'react';
+import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 
-import {Header} from './templates/Header/Header.tsx';
+import { DevicesViewContextProvider } from './Context/DevicesViewContext.tsx';
 
-export const DeviceContext = createContext(100);
+import { Header } from './templates/Header/Header.tsx';
 
 export const App = () => {
     const location = useLocation();
@@ -26,10 +26,12 @@ export const App = () => {
 
     return (
         <>
-            <Header/>
-            <main className="ui main">
-                <Outlet/>
-            </main>
+            <Header />
+            <DevicesViewContextProvider>
+                <main className="ui main">
+                    <Outlet />
+                </main>
+            </DevicesViewContextProvider>
         </>
     );
 };

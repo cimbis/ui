@@ -1,4 +1,4 @@
-import {useContext} from "react";
+import {useContext, useEffect} from "react";
 
 import { Table } from '../../components/Table/Table.tsx';
 import { THead } from '../../components/Table/THead.tsx';
@@ -7,12 +7,18 @@ import { TR } from '../../components/Table/TR.tsx';
 import { TH } from '../../components/Table/TH.tsx';
 import { TD } from '../../components/Table/TD.tsx';
 
-import {DeviceContext} from "../../App.tsx";
+import {DeviceContext} from "../../Context/DeviceContext.tsx";
+import {DevicesViewContext} from "../../Context/DevicesViewContext.tsx";
 
 import './DevicesList.css';
 
 export const DevicesList = () => {
     const deviceContext = useContext(DeviceContext);
+    const {setListView} = useContext(DevicesViewContext);
+
+    useEffect(() => {
+        setListView()
+    }, [setListView]);
 
     return (
         <div>

@@ -1,13 +1,15 @@
 import { useContext, useMemo } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-import { DeviceContext } from '../../App.tsx';
+import { DeviceContext } from '../../Context/DeviceContext.tsx';
 
 import Placeholder from '../../assets/components/placeholder.png';
+import { DevicesViewContext } from '../../Context/DevicesViewContext.tsx';
 
 export const Device = () => {
     const location = useLocation();
     const deviceContext = useContext(DeviceContext);
+    const { devicesView } = useContext(DevicesViewContext);
 
     const id = useMemo(() => {
         const paths = location.pathname.split('/');
@@ -25,7 +27,9 @@ export const Device = () => {
     return (
         <div className="ui device">
             <div className="ui device-nav-actions">
-                <button>back</button>
+                <Link to={`/devices/${devicesView}`}>
+                    <button>back</button>
+                </Link>
                 <Link to={`/device/${previousLinkId}`}>
                     <button>previous device</button>
                 </Link>
