@@ -12,6 +12,7 @@ const getIcon = (icon: string) => {
 };
 
 export const IconButton = ({ icon, className, ...props }: IconProps) => {
+    // list.svg doesn't render the correct fill - messed up mask?
     const IconSVG = getIcon(icon);
 
     return (
