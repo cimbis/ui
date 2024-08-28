@@ -11,14 +11,15 @@ import { CheckBoxLabel } from '../components/Checkbox/CheckboxLabel.tsx';
 
 import { Searchbox } from '../components/Search/Searchbox.tsx';
 
-import Placeholder from '../assets/components/placeholder.png';
-import './ComponentList.css';
 import {Table} from "../components/Table/Table.tsx";
 import {THead} from "../components/Table/THead.tsx";
+import {TBody} from "../components/Table/TBody.tsx";
 import {TR} from "../components/Table/TR.tsx";
 import {TH} from "../components/Table/TH.tsx";
-import {TBody} from "../components/Table/TBody.tsx";
 import {TD} from "../components/Table/TD.tsx";
+
+import Placeholder from '../assets/components/placeholder.png';
+import './ComponentList.css';
 
 export const ComponentList = () => {
     return (
@@ -40,7 +41,7 @@ export const ComponentList = () => {
                         <ProductCardImage imgSrc={Placeholder} imgAlt={''} />
                         <ProductCardContent>
                             <span>123</span>
-                            <span className={'ui text-quiet text-small'}>123</span>
+                            <span className={'ui text-color-quiet text-size-sm'}>123</span>
                         </ProductCardContent>
                     </ProductCard>
 
@@ -48,7 +49,7 @@ export const ComponentList = () => {
                         <ProductCardImage imgSrc={Placeholder} imgAlt={''} />
                         <ProductCardContent>
                             <span>123</span>
-                            <span className={'ui text-quiet text-small'}>123</span>
+                            <span className={'ui text-color-quiet text-size-sm'}>123</span>
                         </ProductCardContent>
                     </ProductCard>
 
@@ -56,7 +57,7 @@ export const ComponentList = () => {
                         <ProductCardImage imgSrc={Placeholder} imgAlt={''} />
                         <ProductCardContent>
                             <span>123</span>
-                            <span className={'ui text-quiet text-small'}>123</span>
+                            <span className={'ui text-color-quiet text-size-sm'}>123</span>
                         </ProductCardContent>
                     </ProductCard>
                 </div>
