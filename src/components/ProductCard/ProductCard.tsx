@@ -3,11 +3,11 @@ import cx from 'classnames';
 import './ProductCard.css';
 
 export type ProductCardProps = {
-    badge: 'unifi' | 'unifi-lte';
+    badge: 'ui' | 'ui-6g';
 } & LinkProps;
 
 export const ProductCard = ({ to, className, children, badge, ...props }: ProductCardProps) => {
-    const badgeText = badge === 'unifi' ? 'UniFi' : 'UniFi LTE';
+    const badgeText = badge === 'ui' ? 'UI' : 'UI 6G';
     return (
         <Link to={to} className={cx('ui product-card', className)} {...props}>
             <div className={'ui badge'}>{badgeText}</div>
