@@ -122,39 +122,3 @@ a:active {
 .ui.gap-16 {
     gap: 1rem;
 }
-
-
-@media screen and (min-width: 37.5rem) {
-    .ui.md-flex-row {
-        display: flex
-    }
-
-    .ui.md-flex-column {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .ui.md-justify-center {
-        justify-content: center;
-    }
-
-    .ui.md-justify-space-between {
-        justify-content: space-between;
-    }
-
-    .ui.md-justify-start {
-        justify-content: start;
-    }
-
-    .ui.md-align-center {
-        align-items: center;
-    }
-
-    .ui.md-align-self-start {
-        align-self: start;
-    }
-
-    .ui.md-align-self-end {
-        align-self: end;
-    }
-}
