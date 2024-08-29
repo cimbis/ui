@@ -10,7 +10,7 @@ export const DeviceData = ({ id }: { id: number }) => {
             <div className="ui device-data-specs">
                 <div className="ui device-data-spec">
                     <div>Product Line</div>
-                    <div>UI</div>
+                    <div className="ui text-color-quiet">UI</div>
                 </div>
                 <div className="ui device-data-spec">
                     <div>ID</div>
@@ -34,7 +34,7 @@ export const DeviceData = ({ id }: { id: number }) => {
                 </div>
                 <div className="ui device-data-spec">
                     <div>Number of exhausts</div>
-                    <div>6</div>
+                    <div className="ui text-color-quiet">6</div>
                 </div>
             </div>
         </div>
