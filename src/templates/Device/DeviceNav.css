@@ -1,0 +1,27 @@
+.ui.device-nav-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space-xl) var(--space-xxl)
+}
+
+.ui.device-selection {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.ui.device-nav-button {
+    appearance: none;
+    min-width: 1.75rem;
+    height: 1.75rem;
+    padding: var(--space-sm);
+    background-color: var(--color-web-unifi-neutral-00);
+    color: var(--color-web-unifi-text-3);
+    border-radius: var(--border-radius-sm);
+    border: none;
+    box-shadow: 0 0 0.0625rem 0 rgba(0, 0, 0, 0.06), 0 0.5rem 1.5rem 0 rgba(0, 0, 0, 0.08);
+}
+
+.ui.device-nav-button:hover {
+    cursor: pointer;
+    background-color: var(--color-web-unifi-neutral-02);
+}
